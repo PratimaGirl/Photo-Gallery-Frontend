@@ -142,8 +142,8 @@ function VideoGallery() {
           ? media.map((item, index) => (
               <div key={item.public_id} className="image-container">
                 <video
-                  width="500"
-                  height="300"
+                  width="410"
+                  height="250"
                   controls
                   src={item.url}
                   alt={item.title}

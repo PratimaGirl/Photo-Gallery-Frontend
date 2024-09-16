@@ -155,8 +155,8 @@ code {
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
+    max-width: 95%;
+    height: 92%;
     border-radius: 10px;
     cursor: pointer;
 }
