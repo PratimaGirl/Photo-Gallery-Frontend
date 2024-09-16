@@ -1,0 +1,52 @@
+.initial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../images/image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  animation: fadeIn 3s ease-in-out;
+}
+
+
+.portrait-image {
+  max-height: 85vh; /* Adjust the height to fit within the viewport */
+  max-width: auto;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px; /* Add some space between the image and the button */
+}
+
+.press-button {
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff00ff;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+  animation: pulse 2s infinite;
+  transition: transform 0.2s ease-in-out;
+}
+
+.press-button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}

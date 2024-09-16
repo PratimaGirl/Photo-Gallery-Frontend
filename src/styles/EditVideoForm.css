@@ -1,0 +1,131 @@
+/* Container for the form overlay */
+.edit-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure it's above other content */
+  }
+  
+  /* Form container */
+  .edit-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* Form Title */
+  .edit-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+  /* Form Labels */
+  .edit-form label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Text Input Field */
+  .edit-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Textarea for description */
+  .edit-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+    resize: vertical;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* File Input Button */
+  .edit-form input[type="file"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  /* Preview for the video */
+  .edit-video-preview {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  /* Buttons */
+  .edit-form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Update button */
+  .btn-green {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-green:hover {
+    background-color: #218838;
+  }
+  
+  /* Cancel button */
+  .btn-grey {
+    background-color: #6c757d;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .btn-grey:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Close Button (Optional styling if you add a close button) */
+  .edit-form .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .edit-form .close-btn:hover {
+    color: #333;
+  }
+  
